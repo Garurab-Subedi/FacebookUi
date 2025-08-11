@@ -1,52 +1,75 @@
+import person1 from './assets/person/1.jpeg';
+import person2 from './assets/person/2.jpeg';
+import person3 from './assets/person/3.jpeg';
+import person4 from './assets/person/4.jpeg';
+import person5 from './assets/person/5.jpeg';
+import person6 from './assets/person/6.jpeg';
+import person7 from './assets/person/7.jpeg';
+import person8 from './assets/person/8.jpeg';
+
+
+import post1 from './assets/post/1.jpeg';
+import post2 from './assets/post/2.jpeg';
+import post3 from './assets/post/3.jpeg';
+import post4 from './assets/post/4.jpeg';
+import post5 from './assets/post/5.jpeg';
+import post6 from './assets/post/6.jpeg';
+import post7 from './assets/post/7.jpeg';
+import post8 from './assets/post/8.jpeg';
+
+
+
+
+
 export const Users = [
   {
     id:1,
-    profilePicture: "assets/person/1.jpeg",
+    profilePicture: person1,
     username: "Safak Kocaoglu",
   },
   {
     id:2,
-    profilePicture: "assets/person/2.jpeg",
+    profilePicture: person2,
     username: "Janell Shrum",
   },
   {
     id:3,
-    profilePicture: "assets/person/3.jpeg",
+    profilePicture: person3,
     username: "Alex Durden",
   },
   {
     id:4,
-    profilePicture: "assets/person/4.jpeg",
+    profilePicture: person4,
     username: "Dora Hawks",
   },
   {
     id:5,
-    profilePicture: "assets/person/5.jpeg",
+    profilePicture: person5,
     username: "Thomas Holden",
   },
   {
     id:6,
-    profilePicture: "assets/person/6.jpeg",
+    profilePicture: person6,
     username: "Shirley Beauchamp",
   },
   {
     id:7,
-    profilePicture: "assets/person/7.jpeg",
+    profilePicture: person7,
     username: "Travis Bennett",
   },
   {
     id:8,
-    profilePicture: "assets/person/8.jpeg",
+    profilePicture: person8,
     username: "Kristen Thomas",
   },
   {
     id:9,
-    profilePicture: "assets/person/9.jpeg",
+    profilePicture: person3,
     username: "Gary Duty",
   },
   {
     id:10,
-    profilePicture: "assets/person/10.jpeg",
+    profilePicture: person6,
     username: "Safak Kocaoglu",
   },
 ];
@@ -55,7 +78,7 @@ export const Posts = [
   {
     id: 1,
     desc: "Love For All, Hatred For None.",
-    photo: "assets/post/1.jpeg",
+    photo: post1,
     date: "5 mins ago",
     userId: 1,
     like: 32,
@@ -64,7 +87,7 @@ export const Posts = [
   {
     id: 2,
     photo: "assets/post/2.jpeg",
-    date: "15 mins ago",
+    date: post2,
     userId: 2,
     like: 2,
     comment: 1,
@@ -72,7 +95,7 @@ export const Posts = [
   {
     id: 3,
     desc: "Every moment is a fresh beginning.",
-    photo: "assets/post/3.jpeg",
+    photo: post3,
     date: "1 hour ago",
     userId: 3,
     like: 61,
@@ -80,7 +103,7 @@ export const Posts = [
   },
   {
     id: 4,
-    photo: "assets/post/4.jpeg",
+    photo: post4,
     date: "4 hours ago",
     userId: 4,
     like: 7,
@@ -88,7 +111,8 @@ export const Posts = [
   },
   {
     id: 5,
-    photo: "assets/post/5.jpeg",
+    photo: post5,
+    desc: "Never give up on something that you can't go a day without thinking about.",
     date: "5 hours ago",
     userId: 5,
     like: 23,
@@ -96,7 +120,8 @@ export const Posts = [
   },
   {
     id: 6,
-    photo: "assets/post/6.jpeg",
+    photo: post6,
+    desc: "Life is what happens when you're busy making other plans.",
     date: "1 day ago",
     userId: 6,
     like: 44,
@@ -105,7 +130,7 @@ export const Posts = [
   {
     id: 7,
     desc: "Never regret anything that made you smile.",
-    photo: "assets/post/7.jpeg",
+    photo: post3,
     date: "2 days ago",
     userId: 7,
     like: 52,
@@ -113,7 +138,8 @@ export const Posts = [
   },
   {
     id: 8,
-    photo: "assets/post/8.jpeg",
+    photo: post5,
+    desc: "Change the world by being yourself.",
     date: "3 days ago",
     userId: 8,
     like: 15,
@@ -122,7 +148,7 @@ export const Posts = [
   {
     id: 9,
     desc: "Change the world by being yourself.",
-    photo: "assets/post/9.jpeg",
+    photo: post8,
     date: "5 days ago",
     userId: 9,
     like: 11,
@@ -130,7 +156,7 @@ export const Posts = [
   },
   {
     id: 10,
-    photo: "assets/post/10.jpeg",
+    photo: post7,
     date: "1 week ago",
     userId: 10,
     like: 104,
