@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Post.css'
 import person1 from '../../assets/person/1.jpeg'
 import post1 from '../../assets/post/1.jpeg'
-import like from '../../assets/like.png'
+import likee from '../../assets/like.png'
 import heart from '../../assets/heart.png'
 import { MoreVert } from '@mui/icons-material'
 import {Users} from "../../dummyData"
 const Post = ({post}) => {
+  const [like, setLike] = useState(post.like)
+  const [isLiked, setIsLiked] = useState(false)
+
+  const likeHandler =()=> {
+    setLike(isLiked ? like-1 : like+1)
+    setIsLiked(!isLiked)
+  }
   return (
     <div className='post'>
         <div className="postWrapper">
@@ -26,9 +33,9 @@ const Post = ({post}) => {
             </div>
             <div className="postButtom">
               <div className="postBottomLeft">
-                <img src={like} alt="" className='likeIcon' />
+                <img src={likee} alt="" className='likeIcon' onClick={likeHandler}/>
                 <img src={heart} alt="" className='likeIcon' />
-                <span className='postLikeCounter'> {post.like} people like it</span>
+                <span className='postLikeCounter'> {like} people like it</span>
               </div>
               <div className="postBottomRight">
                 <span className='postCommentText'> {post.comment} comments</span>

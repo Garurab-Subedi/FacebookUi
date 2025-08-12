@@ -1,11 +1,8 @@
 import React from 'react'
 import './Sidebar.css'
 import { RssFeed, Chat, PlayCircleFilled, Group, Bookmark, HelpOutline, WorkOutline, Event } from '@mui/icons-material'
-import person1 from '../../assets/person/1.jpeg'
-import person2 from '../../assets/person/2.jpeg'
-import person3 from '../../assets/person/3.jpeg'
-import person4 from '../../assets/person/4.jpeg'
-import person5 from '../../assets/person/5.jpeg'
+import {Users} from '../../dummyData'
+import Online from '../online/Online'
 
 const Sidebar = () => {
   return (
@@ -52,42 +49,9 @@ const Sidebar = () => {
             <button className="sidebarButton">Show More</button>
             <hr className="sidebarHr" />
             <ul className="sidebarFriendList">
-                <li className="sidebarFriend">
-                    <img src={person1} alt="" className="sidebarFriendImg" />
-                    <span className="sidebarFriendName">John Doe</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src={person2} alt="" className="sidebarFriendImg" />
-                    <span className="sidebarFriendName">Jane Smith</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src={person3} alt="" className="sidebarFriendImg     " />
-                    <span className="sidebarFriendName">Alice Johnson</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src={person4} alt="" className="sidebarFriendImg" />
-                    <span className="sidebarFriendName">Bob Brown</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src={person5} alt="" className="sidebarFriendImg " />
-                    <span className="sidebarFriendName">Charlie Davis</span>
-                </li>
-                 <li className="sidebarFriend">
-                    <img src={person4} alt="" className="sidebarFriendImg" />
-                    <span className="sidebarFriendName">Bob Brown</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src={person5} alt="" className="sidebarFriendImg " />
-                    <span className="sidebarFriendName">Charlie Davis</span>
-                </li>
-                 <li className="sidebarFriend">
-                    <img src={person4} alt="" className="sidebarFriendImg" />
-                    <span className="sidebarFriendName">Bob Brown</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src={person5} alt="" className="sidebarFriendImg " />
-                    <span className="sidebarFriendName">Charlie Davis</span>
-                </li>
+               {Users.map(u=>(
+            <Online key={u.id} user={u} />
+          ))}
             </ul>
         </div>
     </div>
